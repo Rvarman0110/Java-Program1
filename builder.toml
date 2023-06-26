@@ -1,0 +1,17 @@
+[[buildpacks]]
+uri = "java-buildpack"
+
+[[buildpacks]]
+uri = "docker://rajavarman/package:java"
+
+
+[[order]]
+
+[[order.group]]
+id = "example/java"
+version = "0.0.5"
+
+[stack]
+id = "io.buildpacks.samples.stacks.jammy"
+run-image = "cnbs/sample-builder:jammy"
+build-image = "cnbs/sample-builder:jammy"
